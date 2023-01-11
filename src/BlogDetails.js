@@ -4,10 +4,10 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
     
     const { id } = useParams();
-    const {data: blog, isPending, error} = useFetch('http://localhost:8000/blogs/'+id);
+    const {data: blog, isPending, error} = useFetch('https://auspicious-necessary-honeydew.glitch.me/blogs/'+id);
     const history = useHistory();
     const handleDelete = ()=>{
-        fetch('http://localhost:8000/blogs/'+blog.id, {
+        fetch('https://auspicious-necessary-honeydew.glitch.me/blogs/'+blog.id, {
             method: 'DELETE'})
             .then(()=>{
                 history.push("/");

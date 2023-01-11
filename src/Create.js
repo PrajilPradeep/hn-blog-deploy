@@ -17,7 +17,7 @@ const Create = () => {
         
         
 
-        fetch('http://localhost:8000/blogs/',{
+        fetch('https://auspicious-necessary-honeydew.glitch.me/blogs/',{
             method: "POST",
             headers: {"content-type":"application/json"},
             body: JSON.stringify(newBlog)
